@@ -1,0 +1,29 @@
+58  git init
+   59  git clone "https://github.com/AranganathanPrakash/spring-framework-petclinic"
+   60  ls
+   61  cd spring-framework-petclinic
+   62  sudo apt update
+   63  sudo apt install maven
+   64  mvn --version
+   65  mvn test
+   66  mvn clean
+   67  mvn install
+   68  mvn package
+   69  cd target
+   70  ls
+   71  cd ..
+   72  docker login -u kkvishal
+   73  docker build -t pet .
+   74  docker tag
+   75  docker push pet
+   76  docker ps
+   77  docker tag pet kkvishal/pet:latest
+   78  docker push kkvishal/pet:latest
+   79  minikube start
+   80  minikube status
+   81  kubectl get nodes
+   82  sudo docker images
+   83  kubectl create deployment pet --image=kkvishal/pet --port=8080
+   84  kubectl expose deployment pet --port=8080 --type=NodePort
+   85  kubectl get pods
+   86  minikube service pet
