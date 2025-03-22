@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: my-springboot-app
-        image: vijith22csr239/pet
+        image: kkvishal/pet
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
